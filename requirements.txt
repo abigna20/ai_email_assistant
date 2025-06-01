@@ -1,4 +1,4 @@
-openai
+cohere
 streamlit
 python-dotenv
 
