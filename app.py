@@ -4,9 +4,8 @@ import os
 import streamlit as st
 from prompt_utils import generate_prompt
 
-load_dotenv(find_dotenv())
 
-api_key = os.getenv("COHERE_API_KEY")
+api_key = st.secrets("COHERE_API_KEY")
 co = cohere.Client(api_key)
 
 st.set_page_config(page_title="AI Email Assistant", layout="centered")
